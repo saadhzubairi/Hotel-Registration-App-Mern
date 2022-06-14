@@ -1,0 +1,68 @@
+.fp {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    transition: all 0.3s;
+}
+
+.fpItem {
+    flex: 1;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+}
+
+.fpImg {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 4px 67px 65px -69px rgba(0, 0, 0, 0.37);
+    -webkit-box-shadow: 4px 67px 65px -69px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: 4px 67px 65px -69px rgba(0, 0, 0, 0.37);
+    transition: all 0.3s;
+}
+
+.fpImg:hover {
+    box-shadow: 4px 67px 65px -69px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 4px 67px 65px -69px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 4px 67px 65px -69px rgba(0, 0, 0, 1);
+    bottom: 10px;
+    top: 0px;
+}
+
+.fpName {
+    color: #333;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.fpCity {
+    font-weight: 300;
+    transition: all 0.3s;
+}
+
+.fpPrice {
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.fpRating>button {
+    background-color: #003580;
+    color: white;
+    border: none;
+    padding: 6px;
+    margin-right: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.fpRating>span {
+    font-size: 14px;
+    transition: all 0.3s;
+}
