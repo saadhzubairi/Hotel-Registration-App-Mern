@@ -45,11 +45,11 @@
     left: 10px;
 }
 
-h1{
-    text-shadow: 5px 4px 20px #000000;
+.featuredItem>h1{
+    text-shadow: 5px 4px 40px #000000;
 }
 
-h2{
+.featuredItem>h2{
     text-shadow: 5px 4px 20px #000000;
     font-size: 14px;
     font-weight: 600;

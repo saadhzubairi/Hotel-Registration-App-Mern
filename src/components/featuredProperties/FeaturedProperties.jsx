@@ -9,12 +9,12 @@ const FeaturedProperties = () => {
                     alt=""
                     className="fpImg"
                 />
-                <span className="fpName">Aparthotel Stare Miasto</span>
-                <span className="fpCity">Madrid</span>
-                <span className="fpPrice">Starting from $120</span>
+                <span className="fpName">Damon's Dungeon</span>
+                <span className="fpCity">Karachi</span>
+                <span className="fpPrice">Starting from $1200</span>
                 <div className="fpRating">
-                    <button>8.9</button>
-                    <span>Excellent</span>
+                    <button>3.2</button>
+                    <span>Extremely poor</span>
                 </div>
             </div>
             <div className="fpItem">
@@ -24,7 +24,7 @@ const FeaturedProperties = () => {
                     className="fpImg"
                 />
                 <span className="fpName">Comfort Suites Airport</span>
-                <span className="fpCity">Austin</span>
+                <span className="fpCity">Islamabd</span>
                 <span className="fpPrice">Starting from $140</span>
                 <div className="fpRating">
                     <button>9.3</button>
@@ -38,7 +38,7 @@ const FeaturedProperties = () => {
                     className="fpImg"
                 />
                 <span className="fpName">Four Seasons Hotel</span>
-                <span className="fpCity">Lisbon</span>
+                <span className="fpCity">Quetta</span>
                 <span className="fpPrice">Starting from $99</span>
                 <div className="fpRating">
                     <button>8.8</button>
@@ -52,7 +52,7 @@ const FeaturedProperties = () => {
                     className="fpImg"
                 />
                 <span className="fpName">Hilton Garden Inn</span>
-                <span className="fpCity">Berlin</span>
+                <span className="fpCity">Peshawar</span>
                 <span className="fpPrice">Starting from $105</span>
                 <div className="fpRating">
                     <button>8.9</button>
