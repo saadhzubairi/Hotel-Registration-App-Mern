@@ -1,0 +1,56 @@
+.feature {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    gap: 10px;
+    z-index: 1;
+
+}
+
+.featuredImage {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+.featuredItem {
+    position: relative;
+    color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 250px;
+    width: 195px;
+    transition: all 0.2s;
+    cursor: pointer;
+    box-shadow: 4px 67px 65px -69px rgba(0, 0, 0, 0.57);
+    -webkit-box-shadow: 4px 67px 65px -69px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 4px 67px 65px -69px rgba(0, 0, 0, 0.57);
+
+}
+
+.featuredItem:hover {
+    box-shadow: 4px 67px 65px -69px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 4px 67px 65px -69px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 4px 67px 65px -69px rgba(0, 0, 0, 1);
+    width: 210px;
+    bottom: 10px;
+    top: 0px;
+}
+
+.featuredTitle {
+    position: absolute;
+    font-size: 80%;
+    bottom: 10px;
+    left: 10px;
+}
+
+h1{
+    text-shadow: 5px 4px 20px #000000;
+}
+
+h2{
+    text-shadow: 5px 4px 20px #000000;
+    font-size: 14px;
+    font-weight: 600;
+}
