@@ -1,0 +1,201 @@
+.listContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.listWrapper {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    gap: 20px;
+}
+
+.listSearch {
+    flex: 1;
+    background: #C33764;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #862251, #C33764);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #862251, #C33764);
+    height: fit-content;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    position: sticky;
+    top: 10px;
+    box-shadow: 0px 12px 39px -2px rgba(0, 0, 0, 0.31);
+    -webkit-box-shadow: 0px 12px 39px -2px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 0px 12px 39px -2px rgba(0, 0, 0, 0.31);
+    gap: 15px;
+}
+
+.dt {
+    font-weight: bold;
+    background-color: #b65573;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 140px;
+    width: 140px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.dt:hover {
+    background-color: #cc869c;
+    box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 0.31);
+    -webkit-box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 0.31);
+}
+
+.datee {
+    position: absolute;
+    top: 185px;
+    border-radius: 20px;
+    left: 155px;
+    font-weight: bold;
+    box-shadow: 2px 6px 98px -23px rgba(0, 0, 0, 0.58);
+    -webkit-box-shadow: 2px 6px 98px -23px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 2px 6px 98px -23px rgba(0, 0, 0, 0.58);
+    transition: all 0.3s;
+    opacity: 1;
+}
+
+.datee.hide {
+    opacity: 0;
+    pointer-events: none;
+    top: 175px;
+    transition: top 0.3s;
+    font-weight: bolder;
+}
+
+.lsTitle {
+    margin-left: 10px;
+    font-size: 50px;
+    text-shadow: 0px 0px 24px rgba(0, 0, 0, 0.51);
+}
+
+.lsItem {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+
+}
+
+.lsItem>input {
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    height: 20px;
+    margin-left: 20px;
+    gap: 10px;
+    display: flex;
+    max-width: 140px;
+    width: 140px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: all 0.3s;
+}
+
+.lsItem>input:hover {
+    box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 0.31);
+    -webkit-box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 0.31);
+}
+
+.lsItem>label {
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px 0px;
+}
+
+.listResult {
+    flex: 3;
+}
+
+.lsOpItems {
+    display: flex;
+    flex-direction: column;
+}
+
+.lsOptionItem {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.lsOpInput {
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    height: 20px;
+    margin-left: 20px;
+    gap: 10px;
+    display: flex;
+    max-width: 100px;
+    width: 100px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.lsOpInput :hover{
+    box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 0.31);
+    -webkit-box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 0.31);
+}
+
+.lsOpText {
+    font-size: 14px;
+    padding: 10px;
+    font-weight: lighter;
+
+}
+
+.searchBt{
+    margin: 15px 15px; 
+    width: 287px;
+    max-width: 1000px;
+    height: 45px;
+    right: 10px;
+    margin-right: 10px;
+    padding-right: 20px;
+    padding-left: 0px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    display: flex;
+    border: none;
+    background-color: #dd1a58;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+.searchBt.scbt{
+    height: 20px;
+    width: 20px;
+    padding: 0px;
+    background-color: inherit;
+    transition: all 0s;
+}
+
+.searchBt:hover{
+    background-color: #1D2671;
+    border-radius: 30px;
+    box-shadow: 0px 0px 37px 4px rgba(0,0,0,0.33);
+-webkit-box-shadow: 0px 0px 37px 4px rgba(0,0,0,0.33);
+-moz-box-shadow: 0px 0px 37px 4px rgba(0,0,0,0.33);
+}

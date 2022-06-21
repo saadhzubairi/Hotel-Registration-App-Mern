@@ -1,14 +1,18 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBed, faCalendar, faCar, faHotel, faPerson, faPlane, faTaxi } from '@fortawesome/free-solid-svg-icons'
+import { faBed, faCalendar, faCar, faHotel, faPerson, faPlane, faSearch, faTaxi } from '@fortawesome/free-solid-svg-icons'
 import "./header.css"
 import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { DateRange } from 'react-date-range';
 import { useState } from "react";
 import { format } from "date-fns";
+import { useNavigate } from "react-router-dom";
 
 
 const Header = ({ type }) => {
+
+
+    const [destination, setDestination] = useState("");
     const [openDate, setOpenDate] = useState(false);
     const [date, setDate] = useState([
         {
@@ -24,6 +28,8 @@ const Header = ({ type }) => {
         room: 1,
     });
 
+    const navigate = useNavigate();
+
     const handleOption = (name, op) => {
         setOptions(prev => {
             return {
@@ -31,6 +37,11 @@ const Header = ({ type }) => {
                 [name]: op === "i" ? options[name] + 1 : options[name] - 1,
             }
         })
+    }
+
+    const handleSearch = () => {
+        
+        navigate("/hotels", { state: { destination, date, options } });
     }
 
     return (
@@ -63,12 +74,16 @@ const Header = ({ type }) => {
                         <h1 className="headerTitle">Such Crazy Discounts!? You're Kidding Me!</h1>
                         <p1 className="headerDesc">Get amazing discounts on every single on of your travels because we have a buttload of cash to give away and you're a sucker!</p1>
                         <div>
-                            <button className="headerButton">Login / Sign-up</button>
+                            <button className="headerButton">LOGIN OR SIGN UP</button>
                         </div>
                         <div className="headerSearch">
                             <div className="headerSearchItem">
                                 <FontAwesomeIcon className="Headericon" icon={faBed} />
-                                <input type="text" placeholder="Where're you goin!?" className="headerSearchInput" />
+                                <input
+                                    type="text"
+                                    placeholder="Where're you goin!?"
+                                    className="headerSearchInput"
+                                    onChange={(e) => setDestination(e.target.value)} />
                             </div>
                             <div className="headerSearchItem">
                                 <FontAwesomeIcon onClick={() => setOpenDate(!openDate)} className="Headericon" icon={faCalendar} />
@@ -84,6 +99,7 @@ const Header = ({ type }) => {
                                     onChange={item => setDate([item.selection])}
                                     moveRangeOnFirstSelection={false}
                                     ranges={date}
+                                    rangeColors = {['#dd1a58', '#7050ff', '#fed14c']}
                                     className={openDate ? "date" : "date hide"}
                                 />
                             </div>
@@ -117,7 +133,10 @@ const Header = ({ type }) => {
                                     </div>
                                 </div>
                             </div>
-                            <button className="headerButton">Search</button>
+                            <button className="headerButton" onClick={handleSearch}>
+                                <FontAwesomeIcon className="Headericon scbt" icon={faSearch} />
+                                SEARCH
+                            </button>
                         </div>
                     </>
                 }

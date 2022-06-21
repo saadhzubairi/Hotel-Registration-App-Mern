@@ -14,6 +14,7 @@
     height: 300px;
 }
 
+
 .featuredItem {
     position: relative;
     color: white;
@@ -26,7 +27,6 @@
     box-shadow: 4px 67px 65px -69px rgba(0, 0, 0, 0.57);
     -webkit-box-shadow: 4px 67px 65px -69px rgba(0, 0, 0, 0.57);
     -moz-box-shadow: 4px 67px 65px -69px rgba(0, 0, 0, 0.57);
-
 }
 
 .featuredItem:hover {
@@ -43,14 +43,15 @@
     font-size: 80%;
     bottom: 10px;
     left: 10px;
+    text-shadow: 2px 0px 6px rgb(0 0 0);
 }
 
-h1{
-    text-shadow: 5px 4px 20px #000000;
+.featuredItem>h1 {
+    text-shadow: 2px 0px 6px rgba(0,0,0,1);
 }
 
-h2{
-    text-shadow: 5px 4px 20px #000000;
+.featuredItem>h2 {
+    text-shadow: 2px 0px 6px rgba(0,0,0,1);
     font-size: 14px;
     font-weight: 600;
 }

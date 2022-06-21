@@ -1,16 +1,18 @@
-*{
+* {
     font-family: "Open Sans";
 }
 
-.navbar{
+.navbar {
     height: 70px;
-    background: rgb(43,24,128);
-    background: linear-gradient(90deg, rgba(43,24,128,1) 0%, rgba(16,40,170,1) 100%);
+    background: #C33764;
+    background: -webkit-linear-gradient(to left, #1D2671, #C33764);
+    background: linear-gradient(to left, #1D2671, #C33764);
     display: flex;
     justify-content: center;
+    position: sticky;
 }
 
-.navContainer{
+.navContainer {
     width: 90%;
     max-width: 1200px;
     color: aliceblue;
@@ -19,12 +21,13 @@
     justify-content: space-between;
 }
 
-.logo{
+.logo {
     font-weight: bold;
     font-size: larger;
+    font-family: 'Montserrat'
 }
 
-.navButton{
+.navButton {
     margin-left: 15px;
     border: 3px solid rgb(255, 255, 255);
     background: transparent;
@@ -37,15 +40,13 @@
     font-weight: bold;
 }
 
-.navButton:hover{
-    background-color: #47339e;
-    color: rgb(255, 230, 0);
+.navButton:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     /* width: 150px; */
     border-radius: 25px;
-    box-shadow: -1px 3px 53px -14px rgba(0,0,0,1);
--webkit-box-shadow: -1px 3px 53px -14px rgba(0,0,0,1);
--moz-box-shadow: -1px 3px 53px -14px rgba(0,0,0,1);
+    box-shadow: 0px 0px 18px -5px rgba(255, 255, 255, 0.79);
+    -webkit-box-shadow: 0px 0px 18px -5px rgba(255, 255, 255, 0.79);
+    -moz-box-shadow: 0px 0px 18px -5px rgba(255, 255, 255, 0.79);
 }
-
-

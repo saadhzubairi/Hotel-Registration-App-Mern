@@ -41,4 +41,15 @@
     font-size: 80%;
     bottom: 10px;
     left: 10px;
+    text-shadow: 2px 0px 6px rgb(0 0 0);
+}
+
+.pListItem>h1{
+    text-shadow: 5px 4px 40px #000000;
+}
+
+.pListItem>h2{
+    text-shadow: 5px 4px 20px #000000;
+    font-size: 14px;
+    font-weight: 600;
 }
